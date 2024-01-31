@@ -56,7 +56,7 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
   </div>
   <div class="redes-sociales">
     <a href="https://www.facebook.com/FabianLaPlataAutomotores/" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com/fabian.chedreuy/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com/la_plata_automotores/" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 </div>
 <header id="header">
