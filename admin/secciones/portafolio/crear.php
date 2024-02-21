@@ -20,6 +20,7 @@ function obtener_id_unidad_recien_agregada($conexion) {
     }
 }
 
+
 if ($_POST) {
     
     // Recepcionamos los valores del formulario

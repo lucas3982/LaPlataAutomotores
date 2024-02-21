@@ -54,12 +54,18 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
   <div class="informacion-contacto">
     <p class="telefono">Telefono: 221-4247953 // 221-2280828</p>
   </div>
+
+  
+
   <div class="redes-sociales">
     <a href="https://www.facebook.com/FabianLaPlataAutomotores/" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com/la_plata_automotores/" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 </div>
 <header id="header">
+
+
+
   
     <nav class="menu">
         <img src="img/La Plata Automotores (3).png" alt="">
@@ -78,6 +84,7 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </nav> 
     
+    
  <!-- Imgagen header-->
     <div class="img-header" id="Home">
         
@@ -89,6 +96,11 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 <!--Menu de navegacion-->
 
 <main>
+  <!-- Contador de visitas -->
+<a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+<img style="border: 0px solid; display: inline; margin-top: 10px; margin-right: 200px;"  alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=15116">
+</a><br><p>VISTAS DEL SITIO</p>
+<!-- Fin Contador de visitas -->
 
 <!--section unites start-->
 <h1>Unidades Disponibles</h1>
@@ -262,16 +274,18 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
   <article class="about__icons credito">
     <img src="img/4646044.png" class="about__icon">
     <h3 class="about__title">Credito</h3>
-    <p class="about__paragrah">Contamos con creditos prendarios sistema frances
-        <br>1. Tasa Fijas y en Pensamos
-<br>Financiacion del 40% hasta el 70% del valor de la unidad y maximo de 60 cuotas
-<br>Requisitos DNI y buen VERAZ</p>
+    <p class="about__paragrah">Contamos con creditos prendarios sistema frances por diferentes Bancos, financieras y Creditos personales. <br>
+•	Tasa Fijas y en Pesos. <br>
+•	Financiacion hasta un 80% del valor de la unidad. <br>
+•	Un maximo de 60 cuotas. <br>
+•	Requisitos solamente DNI y buen Veraz. <br>
+•	El anticipo lo podes conformar con tu USADO y o Efectivo.Z</p>
   </article>
 
   <article class="about__icons permuta">
     <img src="img/519848.png" class="about__icon">
     <h3 class="about__title">Permuta</h3>
-    <p class="about__paragrah">Tomamos tu usado al mejor precio, en buen estado general y hasta una maxio de 130000km.
+    <p class="about__paragrah">Tomamos tu usado al mejor precio, en buen estado general y hasta una maximo de 130000km.
         <br>La unidad debera estar el dia y con la documentacion legal correspondiente.
         <br>Solamente se tasa en el local para una mejor valuación.
         <br>No se da precio estimado de toma sin ver la unidad.
