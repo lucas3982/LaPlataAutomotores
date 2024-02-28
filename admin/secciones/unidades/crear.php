@@ -12,6 +12,7 @@ if($_POST) {
         $Marca=(isset($_POST['Marca']))?$_POST['Marca']:"";
         $Año=(isset($_POST['Año']))?$_POST['Año']:"";
         $Km=(isset($_POST['Km']))?$_POST['Km']:"";
+        $precio=(isset($_POST['precio']))?$_POST['precio']:"";
 
 
         //con esto lo que voy hacer es adjuntar las imagenes a la carpeta de img las cuales van a ser utilizadas en la pagina
@@ -26,13 +27,14 @@ if($_POST) {
 
 
     //hago una ejecucion de insercion
-    $sentencia=$conexion->prepare("INSERT INTO `tb_unidades` (`id`, `imagen`, `Marca`, `Año`, `Km`) 
-    VALUES (NULL, :imagen, :Marca, :Anio, :Km);");
+    $sentencia=$conexion->prepare("INSERT INTO `tb_unidades` (`id`, `imagen`, `Marca`, `Año`, `Km`, `precio`) 
+    VALUES (NULL, :imagen, :Marca, :Anio, :Km, :precio);");
 
         $sentencia->bindParam(":imagen", $nombre_archivo_imagen);
         $sentencia->bindParam(":Marca", $Marca);
         $sentencia->bindParam(":Anio", $Año);
         $sentencia->bindParam(":Km", $Km);
+        $sentencia->bindParam(":precio", $precio);
 
         try {
             $sentencia->execute();
@@ -83,6 +85,12 @@ if($_POST) {
             <div class="mb-3">
                 <label for="Km" class="form-label">Km:</label>
                     <input type="text" class="form-control" name="Km" id="Km" aria-describedby="helpId" placeholder="Km">
+                    
+            </div>
+
+            <div class="mb-3">
+                <label for="Km" class="form-label">Precio:</label>
+                    <input type="text" class="form-control" name="precio" id="precio" aria-describedby="helpId" placeholder="precio">
                     
             </div>
 

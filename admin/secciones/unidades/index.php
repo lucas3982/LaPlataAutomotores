@@ -58,6 +58,7 @@ include("../../templates/header.php");?>
                         <th scope="col">Marca y Version</th>
                         <th scope="col">Año</th>
                         <th scope="col">Km</th>
+                        <th scope="col">Precio</th>
                         <th scope="col">Acción</th>
                     </tr>
                 </thead>
@@ -75,6 +76,7 @@ include("../../templates/header.php");?>
                         <td><?php echo $registros['Marca'];?></td>
                         <td><?php echo $registros['Año'];?></td>
                         <td><?php echo $registros['Km'];?></td>
+                        <td><?php echo $registros['precio'];?></td>
                         <td>
                             <a name="" id="" class="btn btn-success" href="editar.php?txtid=<?php echo $registros['id']; ?>" role="button">Editar</a>
                             |

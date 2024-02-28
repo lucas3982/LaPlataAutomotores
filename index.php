@@ -112,8 +112,9 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
           <img src="img/<?php echo $registros["imagen"] ?>" >
           <div class="descripcion">
               <h3><?php echo $registros["Marca"] ?></h3>
-              <p><?php echo $registros["Año"] ?></p> <br>
-              <p><?php echo $registros["Km"] ?></p>
+              <p><?php echo $registros["Año"] ?></p> 
+              <p><?php echo $registros["Km"] ?></p> <br>
+              <h3><?php echo $registros["precio"] ?></h3>
               <a href="portafolio.php?codigo=<?php echo $registros['id']; ?>" class="ver-mas">Ver más</a>
           </div>
       </li>
@@ -279,14 +280,14 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 •	Financiacion hasta un 80% del valor de la unidad. <br>
 •	Un maximo de 60 cuotas. <br>
 •	Requisitos solamente DNI y buen Veraz. <br>
-•	El anticipo lo podes conformar con tu USADO y o Efectivo.Z</p>
+•	El anticipo lo podes conformar con tu USADO y/o Efectivo.</p>
   </article>
 
   <article class="about__icons permuta">
     <img src="img/519848.png" class="about__icon">
     <h3 class="about__title">Permuta</h3>
     <p class="about__paragrah">Tomamos tu usado al mejor precio, en buen estado general y hasta una maximo de 130000km.
-        <br>La unidad debera estar el dia y con la documentacion legal correspondiente.
+        <br>La unidad debera estar al dia y con la documentacion legal correspondiente.
         <br>Solamente se tasa en el local para una mejor valuación.
         <br>No se da precio estimado de toma sin ver la unidad.
     </p>
@@ -295,8 +296,8 @@ $lista_unidades=$sentencia->fetchAll(PDO::FETCH_ASSOC);
   <article class="about__icons consignacion">
     <img src="img/1345669.png" class="about__icon">
     <h3 class="about__title">Consignación</h3>
-    <p class="about__paragrah">Con una tasacion se evalua el estado generañ e historial del vehiculo para lograr
-        <br>precio acorde al mercado
+    <p class="about__paragrah">Con una tasación se evalua el estado general e historial del vehiculo para lograr
+        un precio acorde al mercado.
         <br>Se requiere toda la documentación legal para una optima venta de la unidad.</p>
   </article>
 

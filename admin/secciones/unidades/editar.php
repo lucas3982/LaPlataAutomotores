@@ -22,6 +22,7 @@ if(isset($_GET['txtid'])) {
         $Marca=$registro['Marca'];
         $Año=$registro['Año'];
         $Km=$registro['Km'];
+        $precio=$registro['precio'];
     //con esto se edita el registro con el ID correspondiente
     }
 
@@ -33,15 +34,17 @@ if(isset($_GET['txtid'])) {
         $Marca = (isset($_POST['Marca'])) ? $_POST['Marca'] : "";
         $Año = (isset($_POST['Año'])) ? $_POST['Año'] : "";
         $Km = (isset($_POST['Km'])) ? $_POST['Km'] : "";
+        $precio = (isset($_POST['precio'])) ? $_POST['precio'] : "";
 
         //hago una ejecucion de insercion
        
             // Ejecución de la actualización
-            $sentencia = $conexion->prepare("UPDATE tb_unidades SET imagen=:imagen, Marca=:Marca, Año=:Anio, Km=:Km WHERE id=:id ");
+            $sentencia = $conexion->prepare("UPDATE tb_unidades SET imagen=:imagen, Marca=:Marca, Año=:Anio, precio=:precio, Km=:Km WHERE id=:id ");
             $sentencia->bindParam(":imagen", $imagen);
             $sentencia->bindParam(":Marca", $Marca);
             $sentencia->bindParam(":Anio", $Año);
             $sentencia->bindParam(":Km", $Km);
+            $sentencia->bindParam(":precio", $precio);
             $sentencia->bindParam(":id", $txtid);
 
             $sentencia->execute();
@@ -130,6 +133,12 @@ include("../../templates/header.php");?>
             <div class="mb-3">
                 <label for="Km" class="form-label">Km:</label>
                     <input value="<?php echo $Km;?>" type="text" class="form-control" name="Km" id="Km" aria-describedby="helpId" placeholder="Km">
+                    
+            </div>
+
+            <div class="mb-3">
+                <label for="Km" class="form-label">Precio:</label>
+                    <input value="<?php echo $precio;?>" type="text" class="form-control" name="precio" id="precio" aria-describedby="helpId" placeholder="precio">
                     
             </div>
 

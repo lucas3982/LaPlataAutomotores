@@ -1,6 +1,6 @@
 <!--creao las referencia para editar, crear y demas infomracion del portafolio y unidades-->
 <?php
-$url_base="http://localhost:8080/LaPlataAutomotores/admin/";//esto lo tengo que cambiar al hosting que se vaya a subir, esta es la url de la aplicacion
+$url_base="https://www.laplataautomotores.com.ar/admin/";//esto lo tengo que cambiar al hosting que se vaya a subir, esta es la url de la aplicacion
 ?>
 <!--creao las referencia para editar, crear y demas infomracion del portafolio y unidades-->
 

@@ -1,14 +1,14 @@
 <?php
 
-$servidor="localhost";
+/*$servidor="localhost";
 $baseDeDatos="laplataautomotores";
 $usuario="root";
-$contraseña="";
+$contraseña="";*/
 
-/*$servidor="localhost";
-$baseDeDatos="c1712233_autlp";
-$usuario="c1712233_autlp";
-$contraseña="tuva80KIri";*/
+$servidor="localhost";
+$baseDeDatos="c1712233_autlpbd";
+$usuario="c1712233_autlpbd";
+$contraseña="BO02gitana";
 
 //c1712233_LPAut
 //c1712233_LPAut
