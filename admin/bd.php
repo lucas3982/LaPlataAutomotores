@@ -8,7 +8,7 @@ $contraseña="";*/
 $servidor="localhost";
 $baseDeDatos="c1712233_autlpbd";
 $usuario="c1712233_autlpbd";
-$contraseña="BO02gitana";
+$contraseña="ga26TAlara";
 
 //c1712233_LPAut
 //c1712233_LPAut
